@@ -9,3 +9,11 @@ const firebaseConfig = {
 	appId: "1:537664176858:web:151b3298ea046534369be3",
 	measurementId: "G-BL0TCRH80G",
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+//auth will be used for signing in and all that
+const auth = firebase.auth();
+
+export { db, auth };
